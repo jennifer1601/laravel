@@ -13,7 +13,6 @@ class indexController extends Controller
      */
     public function index(Request $request)
     {
-        $data['title']=' Home';
         $data['path']= $request->path();
         return view('child', $data);
     }

@@ -115,10 +115,15 @@
 	@if($path == 'team')
         @yield('team')
     @endif
+	@if($path == 'contact')
+        @yield('contact')
+    @endif
+	@if($path == 'blog')
+        @yield('blog')
+    @endif
 	<!-- content -->
 </div>
 <!-- container -->
-
 <!-- footer -->
 <footer class="pt-5 pb-3">
 	<div class="container">

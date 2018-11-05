@@ -16,3 +16,4 @@ Route::get('/about','indexController@index');
 Route::get('/services','indexController@index');
 Route::get('/team','indexController@index');
 Route::get('/contact','indexController@index');
+Route::get('/blog','indexController@index');
