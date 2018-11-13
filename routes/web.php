@@ -11,9 +11,23 @@
 |
 */
 
+// home
 Route::get('/','indexController@index');
+
+// about us
 Route::get('/about','indexController@index');
+
+// service
 Route::get('/services','indexController@index');
+
+// team
 Route::get('/team','indexController@index');
+
+// contact us
 Route::get('/contact','indexController@index');
+
+// achievement
+Route::get('/achievement','indexController@index');
+
+// blogdetail
 Route::get('/blog','indexController@index');

@@ -14,7 +14,30 @@ class indexController extends Controller
     public function index(Request $request)
     {
         $data['path']= $request->path();
-        return view('child', $data);
+        switch($request->path()){
+            case '/':
+                $view = 'home';
+                break;
+            case 'about':
+                $view = 'about';
+                break;
+            case 'services':
+                $view = 'services';
+                break;
+            case 'team':
+                $view = 'team';
+                break;
+            case 'contact':
+                $view = 'contact';
+                break;
+            case 'achievement':
+                $view = 'achievement';
+                break;
+            case 'blog':
+                $view = 'blog';
+                break;
+        }
+        return view($view, $data);
     }
 
     /**
